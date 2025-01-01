@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    button {
+      font-weight: 700;
+      color: white;
+      background-color: hsl(0, 0%, 20%);
+      border: none;
+      font-size: 1rem;
+      margin: 0.3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 85%;
+      border-radius: 5%;
+    }
+    img {
+      border-radius: 50%;
+      width: 8rem;
+    }
+    h1 {
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+    }
+    .desc {
+      color: aliceblue;
+    }
+    .location {
+      color: hsl(75, 94%, 57%);
+      font-weight: 600;
+    }
+    .main {
+      font-family:'Courier New', ;
+      display: flex;
+      background-color: hsl(0, 0%, 12%);
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border-radius: 2%;
+      margin-top: 9%;
+      margin-bottom: 9%;
+      margin: 4rem;
+    }
+    button:hover {
+      background-color: #444;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .last_button {
+      margin-bottom: 9%;
+    }
+    .attribution {
+      color: white;
+    }
+
+    /* Media Queries for Responsiveness */
+
+    /* For mobile devices (max-width: 768px) */
+    @media (max-width: 768px) {
+      .main {
+        margin: 2rem;
+        width: 90%;
+      }
+      button {
+        font-size: 0.9rem;
+        width: 90%;
+      }
+      img {
+        width: 6rem;
+      }
+    }
+
+    /* For laptops and larger devices (min-width: 1024px) */
+    @media (min-width: 1024px) {
+      .main {
+        margin: 4rem auto;
+        width: 100%;
+        padding: 2rem;
+      }
+      button {
+        font-size: 1.1rem;
+        width: 100%;
+      }
+      img {
+        width: 10rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <div class="main">
+    <h1>Jessica Randall</h1>
+    <img src="./assets/images/avatar-jessica.jpeg" alt="profile pic">
+    <p class="location">London, United Kingdom</p>
+    <p class="desc">"Front-end developer and avid reader."</p>
+    
+    <button>GitHub</button>
+    <button>Frontend Mentor</button>
+    <button>LinkedIn</button>
+    <button>Twitter</button>
+    <button class="last_button">Instagram</button>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Saarthak Tyagi</a>.
+  </div>
+</body>
+</html>
